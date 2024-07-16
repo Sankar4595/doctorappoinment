@@ -1,29 +1,10 @@
 {
     "build": {
-      "development": {
-        "android": {
-          "buildType": "apk"
-        },
-        "ios": {
-          "buildType": "archive"
-        }
-      },
-      "production": {
-        "android": {
-          "buildType": "app-bundle"
-        },
-        "ios": {
-          "buildType": "archive"
-        }
+      "base": {
+        "release": {},
+        "development": {}
       }
     },
-    "submit": {
-      "android": {
-        "track": "internal"
-      },
-      "ios": {
-        "appleId": "your_apple_id@example.com"
-      }
-    }
+    "submit": {}
   }
   
