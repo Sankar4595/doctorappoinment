@@ -1,6 +1,13 @@
 {
     "build": {
-
+      "development": {
+        "android": {
+          "buildType": "apk"
+        }
+      },
+      "production": {
+      
+      }
     },
     "submit": {}
   }
