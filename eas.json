@@ -11,5 +11,6 @@
 "distribution": "internal",
 "channel": "development"
 },
-"production":{"channel": "production"}
+"production":{"channel": "production"},
+  "android":{"image":"default"}
 }}
