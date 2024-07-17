@@ -12,5 +12,5 @@
 "channel": "development"
 },
 "production":{"channel": "production"},
-  "android":{"image":"default"}
+  "ios":{"image":"default"}
 }}
