@@ -1,16 +1,22 @@
 {
-"build": {
-"preview": {
-"android": {
-"buildType": "apk"
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "release": {},
+    "development": {
+      "android": {
+        "developmentClient": true,
+        "distribution": "internal",
+        "channel": "development"
+      }
+    },
+    "production": {
+      "android": {
+        "channel": "production"
+      }
+    }
+  }
 }
-},
-"release": {},
-"development": {
-"developmentClient": true,
-"distribution": "internal",
-"channel": "development"
-},
-"production":{"channel": "production"},
-  "ios":{"image":"default"}
-}}
