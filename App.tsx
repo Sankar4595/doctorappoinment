@@ -12,69 +12,72 @@ import Explorer from "./Screens/Home/Explorer";
 import Chat from "./Screens/Home/Chat";
 import Appointment from "./Screens/Home/Appoinment";
 import Profile from "./Screens/Home/Profile";
+import { Provider } from "react-redux";
+import store from "./store";
 
 const Stack = createStackNavigator();
-const Tab = createBottomTabNavigator();
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="welcome"
-          component={Welcome}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="SignIn"
-          component={SignIn}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="SignUp"
-          component={SignUp}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="VerifyCode"
-          component={VerifyCode}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="NewPassword"
-          component={NewPassword}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="CompleteProfile"
-          component={CompleteProfile}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="HomeScreen"
-          component={HomeScreen}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="Explorer"
-          component={Explorer}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="Appointment"
-          component={Appointment}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="Chat"
-          component={Chat}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="Profile"
-          component={Profile}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="welcome"
+            component={Welcome}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="SignIn"
+            component={SignIn}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="SignUp"
+            component={SignUp}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="VerifyCode"
+            component={VerifyCode}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="NewPassword"
+            component={NewPassword}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="CompleteProfile"
+            component={CompleteProfile}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="HomeScreen"
+            component={HomeScreen}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="Explorer"
+            component={Explorer}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="Appointment"
+            component={Appointment}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="Chat"
+            component={Chat}
+          />
+          <Stack.Screen
+            options={{ headerShown: false }}
+            name="Profile"
+            component={Profile}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
 }

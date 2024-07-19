@@ -1,6 +1,6 @@
 {
+  "name": "DoctorAppointment",
   "expo": {
-    "name": "DoctorAppointment",
     "slug": "doctorappointment",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -25,17 +25,17 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "94b46236-eb16-4170-a184-64819831988b"
-      }
-    },
     "owner": "sankar4595",
     "runtimeVersion": {
       "policy": "appVersion"
     },
     "updates": {
       "url": "https://u.expo.dev/94b46236-eb16-4170-a184-64819831988b"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "787e6461-3b44-4304-ad03-d4ac71de7b95"
+      }
     }
   }
 }

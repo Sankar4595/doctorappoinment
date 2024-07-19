@@ -1,17 +1,11 @@
-// store.js
-import { createStore, combineReducers } from "redux";
+// src/store/store.js
+import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers } from "redux";
 
-// Define your initial state and reducers here
-const initialState = {
-  user: null,
-  doctors: [],
-  appointments: [],
-};
+const rootReducer = combineReducers({});
 
-const rootReducer = combineReducers({
-  // your reducers
+const store = configureStore({
+  reducer: rootReducer,
 });
-
-const store = createStore(rootReducer);
 
 export default store;
