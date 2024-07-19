@@ -6,8 +6,10 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-
-const SignIn = ({ navigation }: any) => {
+interface INavigate {
+  navigation: any;
+}
+const SignIn: React.FC<INavigate> = ({ navigation }) => {
   const handleOAuth = (provider: string) => {
     console.log(`Logging in with ${provider}`);
     navigation.navigate("HomeScreen");

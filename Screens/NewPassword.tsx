@@ -6,8 +6,10 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-
-const NewPassword = ({ navigation }: any) => {
+interface INavigate {
+  navigation: any;
+}
+const NewPassword: React.FC<INavigate> = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>New Password</Text>

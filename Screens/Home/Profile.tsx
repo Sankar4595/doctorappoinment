@@ -9,8 +9,10 @@ import {
   Image,
 } from "react-native";
 import BaseComponent from "../../components/BaseComponent";
-
-const Profile = ({ navigation }: any) => {
+interface INavigate {
+  navigation: any;
+}
+const Profile: React.FC<INavigate> = ({ navigation }) => {
   const [gender, setGender] = useState("male");
 
   return (

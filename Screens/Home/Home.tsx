@@ -10,8 +10,10 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import BaseComponent from "../../components/BaseComponent";
-
-const HomeScreen = ({ navigation }: any) => {
+interface INavigate {
+  navigation: any;
+}
+const HomeScreen: React.FC<INavigate> = ({ navigation }) => {
   return (
     <BaseComponent>
       <View style={styles.header}>

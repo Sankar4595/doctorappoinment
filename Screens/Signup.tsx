@@ -7,7 +7,10 @@ import {
   View,
 } from "react-native";
 
-const SignUp = ({ navigation }: any) => {
+interface ISignup {
+  navigation: any;
+}
+const SignUp: React.FC<ISignup> = ({ navigation }) => {
   const handleOAuth = (provider: string) => {
     console.log(`Logging in with ${provider}`);
     navigation.navigate("VerifyCode");

@@ -7,8 +7,10 @@ import {
   Image,
   ScrollView,
 } from "react-native";
-
-const Carousel = ({ navigation }: any) => {
+interface ICarousel {
+  navigation: any;
+}
+const Carousel: React.FC<ICarousel> = ({ navigation }) => {
   const scrollViewRef: any = useRef<ScrollView>(null);
 
   // Array of carousel items with their respective navigation targets

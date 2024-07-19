@@ -8,8 +8,10 @@ import {
   View,
   Image,
 } from "react-native";
-
-const CompleteProfile = ({ navigation }: any) => {
+interface INavigate {
+  navigation: any;
+}
+const CompleteProfile:React.FC<INavigate> = ({ navigation }) => {
   const [gender, setGender] = useState("male");
 
   return (

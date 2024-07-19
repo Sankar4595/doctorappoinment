@@ -1,7 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 
-const Welcome = ({ navigation }: any) => {
+interface INavigate {
+  navigation: any;
+}
+const Welcome: React.FC<INavigate> = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Image style={styles.background} source={require("../assets/1.jpg")} />

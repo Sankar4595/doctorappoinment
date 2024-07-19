@@ -8,8 +8,10 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-
-const VerifyCode = ({ navigation }: any) => {
+interface INavigate {
+  navigation: any;
+}
+const VerifyCode: React.FC<INavigate> = ({ navigation }) => {
   const [otp, setOtp] = useState(["", "", "", ""]);
   const refs: any = [useRef(null), useRef(null), useRef(null), useRef(null)];
 
